@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jasmeet Website</title>
+
+    <meta name="description" content="Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link id="stylesheet" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+        <a href="index.html">MAIN PAGE</a>
+      <a href="personalinfo.html">PERSONAL INFO</a>
+      <a href="contactme.html">CONTACT ME</a>
+      <a href="academichonesty.html">HONESTY</a>
+      </nav> 
+
+      <section class="grey">
+        <div style="width: 40%" class="center container">
+          <h1 id="contact">Contact Me</h1>
+          <form id="contactform" method="post" action="https://httpbin.org/post">
+            <label for="name">Name: </label>
+            <input name="name" type="text" required />
+  
+            <label for="tel">Phone Number: </label>
+            <input name="tel" type="text" placeholder="123-456-7890" required />
+  
+            <label for="email">Email: </label>
+            <input name="email" type="email" required />
+  
+            <label for="address">Address: </label>
+            <input name="address" type="text" />
+  
+            <label for="city">City:</label>
+            <input list="cad-cities" id="city" name="city" type="text" />
+
+            <datalist id="cad-cities">
+                <option value="Toronto"></option>
+                <option value="Montreal"></option>
+                <option value="Calgary"></option>
+                <option value="Ottawa"></option>
+                <option value="Edmonton"></option>
+                <option value="Mississauga"></option>
+                <option value="Winnipeg"></option>
+                <option value="Vancouver"></option>
+                <option value="Brampton"></option>
+                <option value="Hamilton"></option>
+                <option value="Quebec City"></option>
+                <option value="Surrey"></option>
+                <option value="Laval"></option>
+                <option value="Halifax"></option>
+              </datalist>
+  
+            <label for="post">Postal Code: </label>
+            <input name="post" type="text" />
+            <p id="postinvalid"></p>
+  
+            <div class="radios">
+              <input
+                id="question"
+                type="radio"
+                name="purpose"
+                value="q"
+                checked
+              />
+              <label for="question">Question</label><br />
+  
+              <input id="comment" type="radio" name="purpose" value="c" />
+              <label for="comment">Comment</label><br />
+              <input id="hire" type="radio" name="purpose" value="h" />
+              <label for="hire">Hiring</label><br />
+            </div>
+            <div id="payrate" style="display: none">
+              <label for="pay">Hourly Rate: </label>
+              <input
+                name="pay"
+                type="number"
+                min="14.35"
+                step="0.01"
+              />
+  
+            </div>
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Type here..."
+              style="height: 200px"
+              required ></textarea>
+            <div style="text-align: center">
+              <input type="submit" name="Submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+  
+  </body>
+  <footer>
+    <p>- Jasmeet Singh - Copyright © 2021 -</p>
+  </footer>
+  <script src="js/script.js"></script>
+</html>
