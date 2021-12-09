@@ -1,0 +1,282 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  color: #212121;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f38181;
+}
+
+.grey {
+  background-color: #212121;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.name {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.name h2 {
+  font-size: 3em;
+}
+
+.name button {
+  background-color: #b9e1dc;
+}
+
+.grey p,
+.grey h2 {
+  color: #f38181;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+button {
+  color: black;
+  background-color: #bdbdbd;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  margin: 0.5em;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #f38181;
+  cursor: pointer;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+figure img {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.honest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.honest h2,
+.honest p,
+.honest h4 {
+  color: #b9e1dc;
+}
+
+.norm-weight h4 {
+  font-weight: normal;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+#contact,
+form {
+  color: #f38181;
+}
+
+#info h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.workexp h2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: white;
+  max-width: 700px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card .desc {
+  margin: 2em;
+  margin-bottom: 1em;
+}
+.card img {
+  object-fit: cover;
+  width: 200px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.desc h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.desc .bottom {
+  font-weight: bold;
+}
+
+.company {
+  margin-top: 3px;
+  color: dimgrey;
+}
+
+#postinvalid {
+  color: red;
+}
+
+#contact {
+  text-align: center;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  color: #212121;
+  padding: 30px;
+  margin: 8px 0;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  color: black;
+  background-color: #b9e1dc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+input[type="submit"]:hover {
+  background-color: #f38181;
+  cursor: pointer;
+}
+
+.radios {
+  margin: 1em 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+footer {
+  padding: 0.3em;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+#ahonest {
+  width: 50%;
+}
+#binfo {
+  width: 40%;
+}
+
+#blabel {
+  width: 30%;
+}
+#bvalue {
+  width: 60%;
+}
+#phonedate {
+  text-align: center;
+  display: none;
+}
+@media only screen and (max-width: 620px) {
+  .name {
+    flex-direction: column;
+  }
+  .honest {
+    flex-direction: column;
+    align-items: center;
+  }
+  #ahonest,
+  #binfo {
+    width: 90%;
+    align-items: center;
+  }
+  .honest h2 {
+    text-align: center;
+  }
+  #info {
+    justify-content: center;
+  }
+  #blabel,
+  #bvalue {
+    width: 35%;
+  }
+  #regdate {
+    display: none;
+  }
+  #phonedate {
+    display: block;
+  }
+  .card img {
+    display: none;
+  }
+}
